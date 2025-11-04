@@ -24,8 +24,8 @@ public class DontTryToCount {
                     break;
                 }
                 x += x;
-
             }
+            
             if (!found) {
                 System.out.println(-1);
             }
