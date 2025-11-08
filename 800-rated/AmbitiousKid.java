@@ -6,25 +6,17 @@ public class AmbitiousKid {
 
         Scanner sc = new Scanner(System.in);
 
-        int t = sc.nextInt();
+        int n = sc.nextInt();
 
-        while (t-- > 0) {
+        int res = Integer.MAX_VALUE;
 
-            int n = sc.nextInt();
-
-            int arr[] = new int[n];
-
-            for (int i = 0; i < n; i++) {
-                arr[i] = sc.nextInt();
-            }
-
-            int res = Integer.MAX_VALUE;
-
-            for (int i = 0; i < n; i++) {
-                res = Math.min(res, Math.abs(arr[i]));
-            }
-
-            System.out.println(res);
+        for (int i = 0; i < n; i++) {
+            int curr = sc.nextInt();
+            res = Math.min(res, Math.abs(curr));
         }
+
+        System.out.println(res);
+
+        sc.close();
     }
 }
