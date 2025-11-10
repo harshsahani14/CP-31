@@ -14,16 +14,10 @@ public class Buttons {
 
             if (a > b) {
                 System.out.println("First");
-                continue;
-            } else if (b > a) {
+            } else if (a < b) {
                 System.out.println("Second");
-                continue;
-            }
-
-            if (c % 2 != 0) {
-                System.out.println("First");
-            } else {
-                System.out.println("Second");
+            } else { 
+                System.out.println((c % 2 == 1) ? "First" : "Second");
             }
 
         }
